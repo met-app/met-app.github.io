@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add a friend - MET</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .card { max-width: 460px; margin: 64px auto; padding: 32px 24px; text-align: center;
+            background: var(--surface); border: 1px solid var(--border); border-radius: 24px; }
+    .card img { width: 72px; height: 72px; border-radius: 18px; margin: 0 auto 16px; }
+    .card h1 { font-size: 28px; margin: 0 0 6px; }
+    .card .place { color: var(--muted); margin: 0 0 24px; }
+    .steps { text-align: left; color: var(--muted); margin: 24px 0 0; padding-left: 20px; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="MET logo" />
+        MET
+      </a>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="card">
+      <img src="assets/logo.png" alt="" />
+      <h1 id="name">Add a friend on MET</h1>
+      <p class="place" id="place">This is a MET profile code.</p>
+      <a class="btn btn-primary" href="index.html#download">Get MET</a>
+      <ol class="steps">
+        <li>Install MET on your phone.</li>
+        <li>Tap <strong>Add friend</strong>, then <strong>Scan QR code</strong>.</li>
+        <li>Scan the code again to add <span id="who">your friend</span> with their details filled in.</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    // The profile is base64url-encoded JSON after the # (see lib/models/profile_code.dart).
+    // It never leaves this page: browsers don't send the # part to the server.
+    try {
+      const raw = location.hash.slice(1).replace(/-/g, '+').replace(/_/g, '/');
+      const json = new TextDecoder().decode(Uint8Array.from(atob(raw), c => c.charCodeAt(0)));
+      const data = JSON.parse(json);
+      if (typeof data.n === 'string' && data.n.trim()) {
+        const name = data.n.trim();
+        document.getElementById('name').textContent = name + ' shared their MET profile';
+        document.getElementById('who').textContent = name;
+        document.title = 'Add ' + name + ' - MET';
+        if (Array.isArray(data.p) && typeof data.p[2] === 'string') {
+          document.getElementById('place').textContent = 'Lives in ' + data.p[2];
+        }
+      }
+    } catch (_) {}
+  </script>
+
+</body>
+</html>
