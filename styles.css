@@ -286,6 +286,10 @@ img {
   margin: 0 0 12px;
 }
 
+.download .cta-row {
+  justify-content: center;
+}
+
 .download .subhead {
   color: var(--muted);
   font-size: 17px;

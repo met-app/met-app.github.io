@@ -8,6 +8,18 @@
   <link rel="icon" href="assets/logo.png" />
   <link rel="apple-touch-icon" href="assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
+  <meta name="apple-itunes-app" content="app-id=6829076218" />
+  <script>
+    // On phones, go straight to the app's store page. Add ?web to the URL
+    // to see the website on a phone instead.
+    (function () {
+      if (location.search.indexOf('web') !== -1) return;
+      var ua = navigator.userAgent;
+      var iPad = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
+      if (/iPhone|iPad|iPod/.test(ua) || iPad) location.replace('https://apps.apple.com/us/app/met-global-friends-location/id6829076218');
+      else if (/Android/.test(ua)) location.replace('https://play.google.com/store/apps/details?id=com.shervinkoushan.met');
+    })();
+  </script>
 </head>
 <body>
 
@@ -32,10 +44,10 @@
         <h1>See where in the world<br /><span class="accent">your friends are.</span></h1>
         <p class="lede">Met someone amazing on a trip, at a hostel or a festival? MET pins them on a map and helps you remember how you met.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#download">Get MET</a>
-          <a class="btn btn-secondary" href="#features">See features</a>
+          <a class="btn btn-primary" href="https://apps.apple.com/us/app/met-global-friends-location/id6829076218">Download on the App Store</a>
+          <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.shervinkoushan.met">Get it on Google Play</a>
         </div>
-        <p class="badge-note">Coming soon to the App Store and Google Play.</p>
+        <p class="badge-note">Free on iPhone and Android.</p>
       </div>
       <div class="phone">
         <img src="assets/hero.png" alt="MET showing a world map with friends pinned in the cities they live in" />
@@ -88,7 +100,10 @@
     <div class="wrap">
       <h2>Get MET</h2>
       <p class="subhead">Free to download on iOS and Android. Planning a trip? Open the map and see who you know there.</p>
-      <p class="badge-note">Coming soon to the App Store and Google Play.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://apps.apple.com/us/app/met-global-friends-location/id6829076218">Download on the App Store</a>
+        <a class="btn btn-secondary" href="https://play.google.com/store/apps/details?id=com.shervinkoushan.met">Get it on Google Play</a>
+      </div>
     </div>
   </section>
 
