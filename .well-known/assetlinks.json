@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.shervinkoushan.met",
+      "sha256_cert_fingerprints": [
+        "B3:CF:75:20:BE:58:2A:A9:EB:79:FF:20:5C:81:94:1B:66:DF:0E:67:A0:FB:CF:91:B8:94:60:79:21:85:94:EC",
+        "3B:1D:D8:DF:17:94:83:9D:E0:66:25:BB:8F:85:80:77:14:20:D5:20:56:7A:E4:A4:68:84:00:C7:75:9C:B8:13"
+      ]
+    }
+  }
+]

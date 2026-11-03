@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "GY5Q3UWZ5V.com.shervinkoushan.met"
+        ],
+        "components": [
+          {
+            "/": "/add*",
+            "comment": "Profile QR codes"
+          }
+        ]
+      }
+    ]
+  }
+}
