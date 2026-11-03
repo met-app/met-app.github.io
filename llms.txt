@@ -1,0 +1,22 @@
+# MET
+
+> MET is a free app for iPhone and Android that shows where in the world your friends live. Users pin each friend in the city they live in on a world map, and save how they met, birthday, nationality, notes and contact details (phone, email, WhatsApp, Instagram, Snapchat, Facebook).
+
+Key facts:
+- Free download; MET Premium (weekly subscription or one-time lifetime purchase) adds iCloud sync on iPhone or Google Drive sync on Android, and backup and restore.
+- No account, no ads, no tracking. Data is stored on the user's phone. MET never uses GPS or live location; users choose where each friend lives.
+- Friends can share their profile as a QR code; scanning it adds them with details filled in.
+- Countries with friends are shaded on the map, with a count of friends and countries.
+
+## Pages
+
+- [Home](https://met-app.github.io/): overview and download links
+- [Features](https://met-app.github.io/features.html): everything MET does
+- [FAQ](https://met-app.github.io/faq.html): pricing, privacy, sync, QR codes
+- [Guides](https://met-app.github.io/guides.html): remembering and keeping in touch with friends around the world
+- [Privacy policy](https://met-app.github.io/privacy.html)
+
+## Download
+
+- [App Store](https://apps.apple.com/us/app/met-global-friends-location/id6829076218)
+- [Google Play](https://play.google.com/store/apps/details?id=com.shervinkoushan.met)

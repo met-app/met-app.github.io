@@ -388,3 +388,27 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Call to action at the end of content pages */
+
+.cta-box {
+  margin-top: 56px;
+  padding: 32px 24px;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.cta-box h2 {
+  margin: 0 0 4px;
+}
+
+.cta-box .cta-row {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.legal h2 a {
+  color: var(--ink);
+}

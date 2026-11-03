@@ -8,13 +8,62 @@
   <link rel="icon" href="assets/logo.png" />
   <link rel="apple-touch-icon" href="assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://met-app.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MET" />
+  <meta property="og:title" content="MET - Your friends around the world" />
+  <meta property="og:description" content="See where in the world your friends live. Pin friends on a map, remember where you met, and keep their details in one place." />
+  <meta property="og:url" content="https://met-app.github.io/" />
+  <meta property="og:image" content="https://met-app.github.io/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="apple-itunes-app" content="app-id=6829076218" />
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "MET",
+    "alternateName": "MET: Global Friends Location",
+    "description": "See where in the world your friends live. Pin friends on a world map, remember where you met, and keep their birthdays and contacts in one place.",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS, Android",
+    "url": "https://met-app.github.io/",
+    "image": "https://met-app.github.io/assets/logo.png",
+    "screenshot": "https://met-app.github.io/assets/hero.png",
+    "downloadUrl": [
+      "https://apps.apple.com/us/app/met-global-friends-location/id6829076218",
+      "https://play.google.com/store/apps/details?id=com.shervinkoushan.met"
+    ],
+    "installUrl": [
+      "https://apps.apple.com/us/app/met-global-friends-location/id6829076218",
+      "https://play.google.com/store/apps/details?id=com.shervinkoushan.met"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Shervin Koushan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MET",
+    "url": "https://met-app.github.io/"
+  }
+]
+  </script>
   <script>
     // On phones, go straight to the app's store page. Add ?web to the URL
     // to see the website on a phone instead.
     (function () {
       if (location.search.indexOf('web') !== -1) return;
       var ua = navigator.userAgent;
+      // Let search engines and AI crawlers (which often pose as Android) index the page
+      if (/bot|crawl|spider|slurp|google|bing|yandex|duckduck|baidu|facebookexternalhit|preview|gptbot|claude|perplexity|anthropic|openai/i.test(ua)) return;
       var iPad = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
       if (/iPhone|iPad|iPod/.test(ua) || iPad) location.replace('https://apps.apple.com/us/app/met-global-friends-location/id6829076218');
       else if (/Android/.test(ua)) location.replace('https://play.google.com/store/apps/details?id=com.shervinkoushan.met');
@@ -111,6 +160,9 @@
     <div class="wrap">
       <span>© 2026 S Koushan. All rights reserved.</span>
       <nav>
+        <a href="features.html">Features</a>
+        <a href="faq.html">FAQ</a>
+        <a href="guides.html">Guides</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
         <a href="mailto:shervin.koushan.dev@gmail.com">Support</a>

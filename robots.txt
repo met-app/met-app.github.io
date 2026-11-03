@@ -1,0 +1,6 @@
+# Search engines and AI assistants are welcome
+User-agent: *
+Allow: /
+Disallow: /add
+
+Sitemap: https://met-app.github.io/sitemap.xml
