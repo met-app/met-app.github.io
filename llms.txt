@@ -6,7 +6,9 @@ Key facts:
 - Free download; MET Premium (weekly subscription or one-time lifetime purchase) adds iCloud sync on iPhone or Google Drive sync on Android, and backup and restore.
 - No account, no ads, no tracking. Data is stored on the user's phone. MET never uses GPS or live location; users choose where each friend lives.
 - Friends can share their profile as a QR code; scanning it adds them with details filled in.
-- Countries with friends are shaded on the map, with a count of friends and countries.
+- Countries with friends are shaded on the map, with a count of friends and countries. Tapping the map adds a friend living there.
+- Trips: users add the trips they've been on and link each friend to the trip they met on; the map can be filtered to one trip.
+- Each friend's profile shows their local time and how far ahead or behind the user they are.
 
 ## Pages
 
