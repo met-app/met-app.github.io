@@ -60,7 +60,9 @@
       const data = JSON.parse(json);
       if (typeof data.n === 'string' && data.n.trim()) {
         const name = data.n.trim();
-        document.getElementById('name').textContent = name + ' shared their MET profile';
+        // "s" marks a friend shared by someone else, not their own profile
+        document.getElementById('name').textContent =
+          data.s ? 'Add ' + name + ' on MET' : name + ' shared their MET profile';
         document.getElementById('who').textContent = name;
         document.title = 'Add ' + name + ' - MET';
         if (Array.isArray(data.p) && typeof data.p[2] === 'string') {
